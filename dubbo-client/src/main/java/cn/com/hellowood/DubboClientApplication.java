@@ -1,6 +1,6 @@
-package cn.com.hellowood.dubboclient;
+package cn.com.hellowood;
 
-import cn.com.hellowood.dubboclient.dubbo.PersonDubboConsumerService;
+import cn.com.hellowood.dubbo.PersonDubboConsumerService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;

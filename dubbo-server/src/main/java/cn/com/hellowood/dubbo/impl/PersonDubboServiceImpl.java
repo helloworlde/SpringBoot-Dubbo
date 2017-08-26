@@ -1,13 +1,13 @@
-package cn.com.hellowood.dubboserver.dubbo.impl;
+package cn.com.hellowood.dubbo.impl;
 
-import cn.com.hellowood.dubboserver.dubbo.PersonDubboService;
-import cn.com.hellowood.dubboserver.model.Person;
+import cn.com.hellowood.dubbo.PersonDubboService;
+import cn.com.hellowood.model.Person;
 import com.alibaba.dubbo.config.annotation.Service;
 
 /**
  * @author 何惠民
  * @create 2017-08-25 17:21
- * @email huimin.he@yi23.net
+ * @email hellowood@outlook.com
  **/
 
 @Service(version = "1.0.0")

@@ -1,13 +1,13 @@
-package cn.com.hellowood.dubboclient.dubbo;
+package cn.com.hellowood.dubbo;
 
-import cn.com.hellowood.dubboclient.model.Person;
+import cn.com.hellowood.model.Person;
 import com.alibaba.dubbo.config.annotation.Reference;
 import org.springframework.stereotype.Component;
 
 /**
  * @author 何惠民
  * @create 2017-08-25 17:07
- * @email huimin.he@yi23.net
+ * @email hellowood@outlook.com
  **/
 @Component
 public class PersonDubboConsumerService {

@@ -1,11 +1,11 @@
-package cn.com.hellowood.dubboclient.model;
+package cn.com.hellowood.model;
 
 import java.io.Serializable;
 
 /**
  * @author 何惠民
  * @create 2017-08-25 17:02
- * @email huimin.he@yi23.net
+ * @email hellowood@outlook.com
  **/
 
 public class Person implements Serializable {

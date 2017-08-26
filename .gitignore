@@ -23,3 +23,9 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+
+.DS_Store
+out/
+*.class
+dubbo-client/out/
+dubbo-server/out/

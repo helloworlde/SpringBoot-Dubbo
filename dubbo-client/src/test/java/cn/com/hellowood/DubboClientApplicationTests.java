@@ -1,4 +1,4 @@
-package cn.com.hellowood.dubboclient;
+package cn.com.hellowood;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
