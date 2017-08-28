@@ -5,7 +5,7 @@ import cn.com.hellowood.model.Person;
 import com.alibaba.dubbo.config.annotation.Service;
 
 /**
- * @author 何惠民
+ * @author HelloWood
  * @create 2017-08-25 17:21
  * @email hellowood@outlook.com
  **/

@@ -5,7 +5,7 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import org.springframework.stereotype.Component;
 
 /**
- * @author 何惠民
+ * @author HelloWood
  * @create 2017-08-25 17:07
  * @email hellowood@outlook.com
  **/

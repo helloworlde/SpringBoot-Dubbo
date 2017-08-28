@@ -3,7 +3,7 @@ package cn.com.hellowood.model;
 import java.io.Serializable;
 
 /**
- * @author 何惠民
+ * @author HelloWood
  * @create 2017-08-25 17:02
  * @email hellowood@outlook.com
  **/
