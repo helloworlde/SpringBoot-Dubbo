@@ -15,9 +15,7 @@ public class PersonDubboConsumerService {
     @Reference(version = "1.0.0")
     PersonDubboService service;
 
-    public void sayHello() {
-        String name = "哈哈哈哈";
-        Person person = service.sayHello(name);
-        System.out.println(person);
+    public Person getPerson(String name) {
+        return service.getPerson(name);
     }
 }

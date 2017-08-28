@@ -10,5 +10,5 @@ import cn.com.hellowood.model.Person;
 
 public interface PersonDubboService {
 
-    Person sayHello(String name);
+    Person getPerson(String name);
 }

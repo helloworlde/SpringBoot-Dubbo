@@ -9,10 +9,6 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class DubboClientApplication {
 
     public static void main(String[] args) {
-
-//        SpringApplication.run(DubboClientApplication.class, args);
-        ConfigurableApplicationContext context = SpringApplication.run(DubboClientApplication.class, args);
-        PersonDubboConsumerService service = context.getBean(PersonDubboConsumerService.class);
-        service.sayHello();
+        SpringApplication.run(DubboClientApplication.class, args);
     }
 }

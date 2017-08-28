@@ -14,7 +14,7 @@ import com.alibaba.dubbo.config.annotation.Service;
 public class PersonDubboServiceImpl implements PersonDubboService {
 
     @Override
-    public Person sayHello(String name) {
+    public Person getPerson(String name) {
         Person person = new Person();
         person.setName(name);
         person.setId(1);
