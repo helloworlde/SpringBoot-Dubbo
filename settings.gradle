@@ -1,0 +1,3 @@
+include 'provider'
+include 'consumer'
+rootProject.name='SpringBootDubbo'
