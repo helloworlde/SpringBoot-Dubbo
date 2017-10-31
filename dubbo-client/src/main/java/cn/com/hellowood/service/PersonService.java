@@ -1,4 +1,4 @@
-package cn.com.hellowood.dubbo;
+package cn.com.hellowood.service;
 
 import cn.com.hellowood.model.Person;
 
@@ -8,7 +8,7 @@ import cn.com.hellowood.model.Person;
  * @email hellowood@outlook.com
  **/
 
-public interface PersonDubboService {
+public interface PersonService {
 
     Person getPerson(String name);
 }

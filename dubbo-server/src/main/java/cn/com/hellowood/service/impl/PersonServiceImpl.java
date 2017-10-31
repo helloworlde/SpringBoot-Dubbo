@@ -1,6 +1,6 @@
-package cn.com.hellowood.dubbo.impl;
+package cn.com.hellowood.service.impl;
 
-import cn.com.hellowood.dubbo.PersonDubboService;
+import cn.com.hellowood.service.PersonService;
 import cn.com.hellowood.model.Person;
 import com.alibaba.dubbo.config.annotation.Service;
 
@@ -11,15 +11,15 @@ import com.alibaba.dubbo.config.annotation.Service;
  **/
 
 @Service(version = "1.0.0")
-public class PersonDubboServiceImpl implements PersonDubboService {
+public class PersonServiceImpl implements PersonService {
 
     @Override
     public Person getPerson(String name) {
         Person person = new Person();
         person.setName(name);
         person.setId(1);
-        person.setGender(1);
-        person.setAge(33);
+        person.setGender(0);
+        person.setAge(18);
 
         return person;
     }

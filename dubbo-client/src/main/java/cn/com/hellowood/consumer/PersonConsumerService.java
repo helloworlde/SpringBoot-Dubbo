@@ -1,5 +1,6 @@
-package cn.com.hellowood.dubbo;
+package cn.com.hellowood.consumer;
 
+import cn.com.hellowood.service.PersonService;
 import cn.com.hellowood.model.Person;
 import com.alibaba.dubbo.config.annotation.Reference;
 import org.springframework.stereotype.Component;
@@ -10,10 +11,10 @@ import org.springframework.stereotype.Component;
  * @email hellowood@outlook.com
  **/
 @Component
-public class PersonDubboConsumerService {
+public class PersonConsumerService {
 
     @Reference(version = "1.0.0")
-    PersonDubboService service;
+    PersonService service;
 
     public Person getPerson(String name) {
         return service.getPerson(name);
