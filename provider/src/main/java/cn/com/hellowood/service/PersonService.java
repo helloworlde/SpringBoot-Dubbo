@@ -1,14 +1,11 @@
 package cn.com.hellowood.service;
 
-import cn.com.hellowood.model.Person;
+import cn.com.hellowood.model.entity.Person;
+
+import java.util.List;
 
 /**
-* @create 2017-08-25 17:19
-* @author HelloWood
-* @email hellowood@outlook.com
-**/
-
-public interface PersonService {
-
-    Person getPerson(String name);
+ * @author HelloWood
+ **/
+public interface PersonService extends BaseService<Person> {
 }

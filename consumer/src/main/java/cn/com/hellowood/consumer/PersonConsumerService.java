@@ -24,7 +24,7 @@ public class PersonConsumerService {
      * @return
      */
     public Person getPerson(Integer id) {
-        return service.getPerson(id);
+        return service.findById(id);
     }
 
     /**
@@ -33,7 +33,7 @@ public class PersonConsumerService {
      * @return
      */
     public List<Person> getAllPerson() {
-        return service.getAllPerson();
+        return service.findAll();
     }
 
     /**
@@ -44,7 +44,7 @@ public class PersonConsumerService {
      * @throws ServiceException
      */
     public Person addPerson(Person person) throws ServiceException {
-        if (service.addPerson(person) <= 0) {
+        if (service.save(person) <= 0) {
             throw new ServiceException("Add person failed");
         }
         return person;
@@ -59,7 +59,7 @@ public class PersonConsumerService {
      * @throws ServiceException
      */
     public Person updatePerson(Integer id, Person person) throws ServiceException {
-        if (service.updatePerson(person) <= 0) {
+        if (service.update(person) <= 0) {
             throw new ServiceException("Update person failed");
         }
         return person;
@@ -73,7 +73,7 @@ public class PersonConsumerService {
      * @throws ServiceException
      */
     public boolean deletePerson(Integer id) throws ServiceException {
-        if (service.deletePerson(id) <= 0) {
+        if (service.deleteById(id) <= 0) {
             throw new ServiceException("Delete person failed");
         }
         return true;
