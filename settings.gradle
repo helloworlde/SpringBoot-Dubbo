@@ -1,4 +1,4 @@
-rootProject.name='SpringBootDubbo'
+rootProject.name = 'SpringBootDubbo'
 include 'provider'
 include 'consumer'
 include 'model'

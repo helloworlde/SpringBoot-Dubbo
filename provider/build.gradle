@@ -27,5 +27,6 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-parent:1.5.6.RELEASE')
 	compile('io.dubbo.springboot:spring-boot-starter-dubbo:1.0.0')
     compile project(':model')
-    testCompile('org.springframework.boot:spring-boot-starter-test')
+	compile project(':common')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
 }

@@ -1,25 +1,45 @@
 package cn.com.hellowood.controller;
 
 import cn.com.hellowood.consumer.PersonConsumerService;
-import cn.com.hellowood.model.Person;
+import cn.com.hellowood.model.entity.Person;
+import cn.com.hellowood.model.exception.ServiceException;
+import cn.com.hellowood.model.util.CommonResponse;
+import cn.com.hellowood.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
-* @create 2017-08-28 13:14
-* @author HelloWood
-* @email hellowoodes@outlook.com
-**/
-
+ * @author HelloWood
+ **/
 @RestController
+@RequestMapping("/person")
 public class PersonController {
 
     @Autowired
-    PersonConsumerService consumerService;
+    PersonConsumerService personService;
 
-    @GetMapping("/getPerson")
-    public Person getPerson(String name) {
-        return consumerService.getPerson(name);
+    @GetMapping
+    public CommonResponse getAllPerson() {
+        return ResponseUtil.generateResponse(personService.getAllPerson());
+    }
+
+    @GetMapping("/{id}")
+    public CommonResponse person(@PathVariable Integer id) {
+        return ResponseUtil.generateResponse(personService.getPerson(id));
+    }
+
+    @PostMapping
+    public CommonResponse addPerson(@RequestBody Person person) throws ServiceException {
+        return ResponseUtil.generateResponse(personService.addPerson(person));
+    }
+
+    @PutMapping("/{id}")
+    public CommonResponse updatePerson(@PathVariable Integer id, @RequestBody Person person) throws ServiceException {
+        return ResponseUtil.generateResponse(personService.updatePerson(id, person));
+    }
+
+    @DeleteMapping("/{id}")
+    public CommonResponse deletePerson(@PathVariable Integer id) throws ServiceException {
+        return ResponseUtil.generateResponse(personService.deletePerson(id));
     }
 }

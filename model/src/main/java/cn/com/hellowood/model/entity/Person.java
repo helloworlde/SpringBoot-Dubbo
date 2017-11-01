@@ -1,13 +1,10 @@
-package cn.com.hellowood.model;
+package cn.com.hellowood.model.entity;
 
 import java.io.Serializable;
 
 /**
  * @author HelloWood
- * @create 2017-08-25 17:02
- * @email hellowood@outlook.com
  **/
-
 public class Person implements Serializable {
     private static final long serialVersionUID = -1L;
 
