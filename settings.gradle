@@ -1,5 +1,6 @@
+rootProject.name='SpringBootDubbo'
 include 'provider'
 include 'consumer'
 include 'model'
-rootProject.name='SpringBootDubbo'
+include 'common'
 
