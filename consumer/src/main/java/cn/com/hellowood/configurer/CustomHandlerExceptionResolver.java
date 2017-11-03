@@ -4,6 +4,7 @@ import cn.com.hellowood.constant.CommonConstant;
 import cn.com.hellowood.model.exception.ServiceException;
 import cn.com.hellowood.model.util.CommonResponse;
 import cn.com.hellowood.model.util.HttpStatus;
+import cn.com.hellowood.util.JSONUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.dao.DataAccessException;
@@ -14,6 +15,7 @@ import org.springframework.web.servlet.NoHandlerFoundException;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 /**
  * @author HelloWood
@@ -58,6 +60,15 @@ public class CustomHandlerExceptionResolver implements HandlerExceptionResolver 
                         .setMessage(ex.getMessage());
                 logger.error(ex.getMessage(), ex);
             }
+        }
+
+        response.setCharacterEncoding("UTF-8");
+        response.setHeader("Content-type", "application/json;charset=UTF-8");
+        response.setStatus(HttpStatus.SUCCESS.code);
+        try {
+            response.getWriter().write(JSONUtil.toJSONString(commonResponse));
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
         return new ModelAndView();

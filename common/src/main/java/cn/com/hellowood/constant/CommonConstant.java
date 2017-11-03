@@ -6,8 +6,8 @@ package cn.com.hellowood.constant;
 public class CommonConstant {
 
     // Request result message
-    public static final String DEFAULT_SUCCEEDED_MESSAGE = "succeeded";
-    public static final String DEFAULT_FAILED_MESSAGE = "failed";
+    public static final String DEFAULT_SUCCEESS_MESSAGE = "success";
+    public static final String DEFAULT_FAIL_MESSAGE = "fail";
     public static final String NO_RESULT_MESSAGE = "no result";
 
     // Operation status

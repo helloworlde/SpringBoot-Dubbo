@@ -21,12 +21,12 @@ public class ResponseUtil {
         if (resultStatus) {
             commonResponse
                     .setCode(HttpStatus.SUCCESS)
-                    .setMessage(CommonConstant.DEFAULT_SUCCEEDED_MESSAGE);
+                    .setMessage(CommonConstant.DEFAULT_SUCCEESS_MESSAGE);
 
         } else {
             commonResponse
                     .setCode(HttpStatus.FAILED)
-                    .setMessage(CommonConstant.DEFAULT_FAILED_MESSAGE);
+                    .setMessage(CommonConstant.DEFAULT_FAIL_MESSAGE);
         }
 
         return commonResponse;
@@ -66,7 +66,7 @@ public class ResponseUtil {
         if (data != null) {
             commonResponse
                     .setCode(HttpStatus.SUCCESS)
-                    .setMessage(CommonConstant.DEFAULT_SUCCEEDED_MESSAGE)
+                    .setMessage(CommonConstant.DEFAULT_SUCCEESS_MESSAGE)
                     .setData(data);
         } else {
             commonResponse

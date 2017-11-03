@@ -24,4 +24,5 @@ repositories {
 
 dependencies {
 	compile project(':model')
+	compile ('com.alibaba:fastjson:1.2.39')
 }
