@@ -1,0 +1,7 @@
+allprojects {
+    group = 'cn.com.hellowood'
+    version = '0.0.1'
+}
+subprojects {
+    apply plugin: 'java'
+}
